@@ -67,8 +67,8 @@ module Bitly
       # Expands either a hash, short url or array of either and gets click data too.
       #
       # Returns the results in the order they were entered
-      def clicks(input)
-        get_method(:clicks, input)
+      def clicks(input, opts = {})
+        get_method(:clicks, input, opts)
       end
 
       # Like expand, but gets the title of the page and who created it
